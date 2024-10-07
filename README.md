@@ -10,7 +10,6 @@ An online platform where users can explore ebooks and educational content. This 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Description
 
@@ -51,13 +50,19 @@ E-bookstore is a fully responsive web application built using React, Tailwind CS
 Here are some screenshots of the E-bookstore project:
 
 ### Homepage
-![Homepage](./screenshots/homepage.png)
+![Homepage](./Screenshot/Homepage.png)
 
 ### Sign Up
-![Signup](./screenshots/signup.png)
+![Signup](./Screenshots/signup.png)
+
+### Login
+![Login](./Screenshots/Login.png)
 
 ### Courses
-![Courses](./screenshots/courses.png)
+![Courses](./Screenshots/course.png)
+
+### Contact
+![Contact](./Screenshots/contact.png)
 
 ## Installation
 
@@ -66,7 +71,7 @@ Follow these steps to install and run the project locally:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/e-bookstore.git
+    git clone https://github.com/inevitable-ank/e-bookstore.git
     ```
 
 2. Navigate to the project directory:
@@ -124,6 +129,3 @@ Contributions are welcome! Please follow these steps to contribute:
 4. Push the changes to your branch (`git push origin feature-branch`).
 5. Open a Pull Request.
 
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
