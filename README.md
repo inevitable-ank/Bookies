@@ -53,16 +53,16 @@ Here are some screenshots of the E-bookstore project:
 ![Homepage](./Screenshot/Homepage.png)
 
 ### Sign Up
-![Signup](./Screenshots/signup.png)
+![Signup](./Screenshot/signup.png)
 
 ### Login
-![Login](./Screenshots/Login.png)
+![Login](./Screenshot/Login.png)
 
 ### Courses
-![Courses](./Screenshots/course.png)
+![Courses](./Screenshot/course.png)
 
 ### Contact
-![Contact](./Screenshots/contact.png)
+![Contact](./Screenshot/contact.png)
 
 ## Installation
 
