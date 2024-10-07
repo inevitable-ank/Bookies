@@ -1,100 +1,129 @@
-E-bookstore
-An online bookstore platform that allows users to explore and purchase a variety of e-books and learning materials. Built with a modern tech stack to deliver a smooth and responsive user experience.
+# E-bookstore
 
-Table of Contents
-Features
-Technologies Used
-Getting Started
-Installation
-Environment Variables
-Usage
-Screenshots
-Backend API Endpoints
-Contributing
-License
-Features
-User authentication (Sign up, Log in)
-Browse a wide collection of e-books
-Responsive and user-friendly design
-Theme toggling (dark/light mode)
-Protected routes for logged-in users (e.g., viewing courses)
-Add books to cart and checkout system (future enhancements)
-Contact form with validation
-Hot toast notifications for user interactions
-Slick carousel for displaying featured books
-Technologies Used
-Frontend:
-React: For building dynamic user interfaces
-Tailwind CSS: For efficient styling with utility classes
-React Router: For routing and navigation
-Axios: For handling HTTP requests to the backend
-React-Hook-Form: For form management and validation
-DaisyUI: For additional UI components
-React-Slick: For slick carousel integration
-React-Hot-Toast: For toast notifications
-Slick Carousel: For displaying carousels
-Backend:
-Express.js: Node.js web framework
-MongoDB: Database for storing user and book data
-Mongoose: MongoDB object modeling tool
-bcrypt.js: For password hashing and security
-dotenv: For environment variable management
-Nodemon: For automatic server restart during development
-CORS: To enable cross-origin resource sharing
-Getting Started
-Prerequisites
-Node.js and npm installed on your machine.
-MongoDB setup on your local machine or through a service like MongoDB Atlas.
-Installation
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/yourusername/ebookstore.git
-cd ebookstore
-Install dependencies for both frontend and backend:
-bash
-Copy code
-# Install frontend dependencies
-cd client
-npm install
+An online platform where users can explore ebooks and educational content. This project is designed to provide a seamless browsing experience for book lovers with features like user authentication, a responsive UI, and a collection of free and premium courses.
 
-# Install backend dependencies
-cd ../server
-npm install
-Environment Variables
-Create a .env file in the backend (server) directory and provide the following details:
+## Table of Contents
+- [Description](#description)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-makefile
-Copy code
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
-Usage
-Start the backend server:
-bash
-Copy code
-cd server
-npm run dev
-Start the frontend development server:
-bash
-Copy code
-cd client
-npm start
-Both the frontend and backend servers should now be running. You can navigate to http://localhost:3000 in your browser to see the frontend.
+## Description
 
-Screenshots
+E-bookstore is a fully responsive web application built using React, Tailwind CSS, and Node.js. It allows users to browse a wide selection of books and courses. Some features include user authentication, light/dark theme support, and a clean, modern design.
 
+## Features
 
-Screenshot 1: Homepage
-Screenshot 2: Book Details Page
-Screenshot 3: Signup/ Login Page
-Screenshot 4: Contact Us Form
-Screenshot 5: Carousel (Featured Books)
-Backend API Endpoints
-Endpoint	Method	Description
-/api/signup	POST	Sign up new users
-/api/login	POST	Log in users
-/api/books	GET	Retrieve all available books
-/api/books/:id	GET	Retrieve a book by ID
-/api/cart	POST	Add books to cart (future)
-Contributing
-Contributions are welcome! Please submit a pull request or open an issue if you have any improvements or suggestions.
+- **User Authentication:** Users can sign up, log in, and access protected resources.
+- **Dark/Light Theme:** Switch between themes based on user preferences saved in local storage.
+- **Course Access:** Registered users can access a list of available courses.
+- **Responsive Design:** Works seamlessly on both desktop and mobile devices.
+- **Real-time Notifications:** Toast notifications to improve user experience.
+- **Carousel:** Display books and courses in a slick, interactive carousel.
+
+## Tech Stack
+
+### Frontend:
+- **React**: For building the user interface.
+- **Tailwind CSS**: For modern and responsive styling.
+- **React Router**: For client-side routing.
+- **Axios**: For handling API requests.
+- **React Hook Form**: For form management.
+- **Daisy UI**: For pre-built UI components.
+- **React Slick & Slick Carousel**: For carousels and sliders.
+- **React Hot Toast**: For displaying toast notifications.
+
+### Backend:
+- **Node.js**: JavaScript runtime environment.
+- **Express**: Web framework for building RESTful APIs.
+- **MongoDB & Mongoose**: NoSQL database and ORM.
+- **bcrypt.js**: For password hashing.
+- **dotenv**: For environment variable management.
+- **Nodemon**: For development server auto-restarting.
+- **CORS**: Middleware to enable cross-origin resource sharing.
+
+## Screenshots
+
+Here are some screenshots of the E-bookstore project:
+
+### Homepage
+![Homepage](./screenshots/homepage.png)
+
+### Sign Up
+![Signup](./screenshots/signup.png)
+
+### Courses
+![Courses](./screenshots/courses.png)
+
+## Installation
+
+Follow these steps to install and run the project locally:
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/your-username/e-bookstore.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd e-bookstore
+    ```
+
+3. Install frontend dependencies:
+
+    ```bash
+    npm install
+    ```
+
+4. Start the frontend development server:
+
+    ```bash
+    npm run dev
+    ```
+
+### Backend Setup:
+
+1. Navigate to the `backend` folder:
+
+    ```bash
+    cd backend
+    ```
+
+2. Install backend dependencies:
+
+    ```bash
+    npm install
+    ```
+
+3. Start the backend server:
+
+    ```bash
+    npm start
+    ```
+
+Make sure you have MongoDB running locally or use a cloud-based MongoDB service (e.g., MongoDB Atlas). Also, create a `.env` file for environment variables like your database URI.
+
+## Usage
+
+- After setting up the frontend and backend, open your browser and navigate to `http://localhost:3000`.
+- Sign up for a new account or log in with an existing account to access protected routes like the list of courses.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push the changes to your branch (`git push origin feature-branch`).
+5. Open a Pull Request.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
